@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1;
+}
+
+body {
+    background-color: #F9F9F9;
+}
+
+.container {
+    max-width: 1200;
+    padding: 0 24px;
+    margin: 0 auto;
+}
+
+.header {
+    margin-bottom: 47px;
+    padding-top: 60px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.header button {
+    min-width: 98px;
+    min-height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #22322F;
+    border-radius: 8px;
+    background-color: transparent;
+
+}
+
+.header button::before {
+    content: url('../img/menu-icon.svg');
+    width: 11px;
+    height: 11px;
+    margin-right: 13px;
+}
+
+.header ul {
+    display: none;
+}
+
+.hero {
+    padding-bottom: 100px;
+}
+
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.hero_text {
+    order: 1;
+}
+
+.hero_text h1 {
+    margin-bottom: 25px;
+    font-size: 27px;
+    line-height: 43px;
+    color: #22322F;
+}
+
+.hero_text p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #22322F;
+    letter-spacing: -0.02em;
+    margin-bottom: 30px;
+}
+
+.hero_text button {
+    border: 2px solid #000000;
+    background-color: #71A89E;
+    font-weight: bold;
+    font-size: 16px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    min-width: 203px;
+    min-height: 44px;
+    color: #FFFFFF;
+}
+
+.hero_illustration {
+    margin-bottom: 48px;
+}
+
+.hero_illustration img {
+    max-width: 100%;
+}
+
+@media only screen and (min-width: 1200px) {
+
+    body {
+        padding: 0 120px 0 120px;
+    }
+
+    .header {
+        margin-bottom: -70px;
+    }
+
+    .header button {
+        display: none;
+    }
+
+    .header ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .header li {
+        list-style-type: none;
+        padding-left: 40px;
+    }
+
+    li a {
+        text-decoration: none;
+        color: #303031;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: -0.02em;
+    }
+
+    li #sign_in {
+        color: #71A89E;
+    }
+
+    .hero .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .hero_text {
+        order: 0;
+    }
+
+    .hero_illustration img {
+        content: url('../img/Illustration.png');
+    }
+
+    .hero_text h1 {
+        font-size: 48px;
+        line-height: 72px;
+        color: #22322F;
+    }
+
+    .hero_text p {
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: -0.02em;
+        color: #22322F;
+    }
+}
+    
